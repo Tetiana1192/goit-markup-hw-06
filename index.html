@@ -327,35 +327,43 @@
 <button ></button>
 <div class="backdrop is-hidden" data-modal> 
   <div class="modal">
-      <form>
+      <form class="form-contant">
           <p class="user-data">Оставьте свои данные, мы вам перезвоним</p>
           <div class="name-text">
-        <label for="user_name">Имя</label>
-        <input type="name" name="name" id="user_name" />
+        <label class="names" for="user_name">Имя</label>
+       
+        <input class="frame" type="name" name="name" id="user_name" />
+        <svg class="icon-person">
+            <use href="images/symbol-defs.svg#icon-person-black-18dp-1"></use>
+        </svg>
         </div>
 
         <div class="name-text">
-        <label for="user_phone">Телефон</label>
-        <input type="tel" name="phone_number" id="user_phone" />
+        <label class="names" for="user_phone">Телефон</label>
+        <input class="frame" type="tel" name="phone_number" id="user_phone" />
         </div>
 
         <div class="name-text">
-        <label for="user_email">Почта</label>
-        <input type="email" name="email" id="user_email" />
+        <label class="names" for="user_email">Почта</label>
+        <input class="frame" type="email" name="email" id="user_email" />
         </div>
 
         <div class="name-text">
-        <label for="user_feedback">Комментарий</label>
+        <label  class="names" for="user_feedback">Комментарий</label>
         <textarea class="feedback" name="feedback"  id="feedback" rows="5" placeholder="Введите текст"></textarea>
         </div>
         
-        <div class="name-text">
-        <input type="checkbox" name="Соглашаюсь с рассылкой и принимаю Условия договора" id="Соглашаюсь с рассылкой и принимаю Условия договора">
-        <label for="user_yes">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+        <div class="mmm">
+       
+            <input class="conditions" type="checkbox" name="Соглашаюсь с рассылкой и принимаю Условия договора" id="Соглашаюсь с рассылкой и принимаю Условия договора">
+        <label class="mailing-list" for="user_yes">Соглашаюсь с рассылкой и принимаю <span class="">Условия
+                договора</span></label>
         </div>
         
-        <button type="button" class="button-box">Отправить</button>
-      </form>
+        <button class="button-box" type="submit">Отправить</button>
+     
+    
+    </form>
 <button type="button" class="modal-button" data-modal-close>
 <svg class="icon-button">
     <use href="./images/symbol-defs.svg#icon-Vector-1"></use>

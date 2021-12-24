@@ -330,12 +330,12 @@
       <form class="form-contant">
           <p class="user-data">Оставьте свои данные, мы вам перезвоним</p>
           <div class="name-text">
-        <label class="names" for="user_name">Имя</label>
-       
-        <input class="frame" type="name" name="name" id="user_name" />
+          <label class="names" for="user_name">Имя</label>
+            <input class="frame" type="name" name="name" id="user_name" />
         <svg class="icon-sign">
             <use href="images/symbol-defs.svg#icon-person-black-18dp-1"></use>
         </svg>
+        
         </div>
 
         <div class="name-text">
@@ -359,12 +359,20 @@
         <textarea class="feedback" name="feedback"  id="feedback" rows="5" placeholder="Введите текст"></textarea>
         </div>
         
-        <div class="mmm">
-       
-            <input class="conditions" type="checkbox" name="Соглашаюсь с рассылкой и принимаю Условия договора" id="Соглашаюсь с рассылкой и принимаю Условия договора">
-        <label class="mailing-list" for="user_yes">Соглашаюсь с рассылкой и принимаю <span class="">Условия
-                договора</span></label>
+        
+        <div class="checkbox-one">
+    <input class="conditions" type="checkbox" name="Соглашаюсь с рассылкой и принимаю Условия договора"
+        id="Соглашаюсь с рассылкой и принимаю Условия договора">
+    <svg class="icon-box">
+        <use href="images/symbol-defs.svg#icon-Vector-2"></use>
+    </svg>
+
+       <label class="mailing-list" for="user_yes">Соглашаюсь с рассылкой и принимаю 
+            <a href="" class="condition-one">Условия договора</a></label>
+
+
         </div>
+        
         
         <button class="button-box" type="submit">Отправить</button>
      

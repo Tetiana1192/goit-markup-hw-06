@@ -808,6 +808,7 @@ img {
   fill: #000;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+cursor: pointer;
 }
 
 .icon-button:hover,
@@ -880,6 +881,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   align-items: center;
   display: inline-flex;
   padding-left: 29px;
+  
  } 
 /**/
 
@@ -911,7 +913,7 @@ padding: 40px;
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
-
+cursor: pointer;
   
 }
 .frame {
@@ -919,7 +921,8 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 height: 40px;
 transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+cursor: pointer;
 }
 
 .icon-sign {
@@ -963,8 +966,12 @@ font-size: 14px;
  letter-spacing: 0.03em;
  color: #757575;
   padding: 0;
-  margin-left: 8px;
-  }
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
 
 
 .condition-one {
@@ -986,7 +993,13 @@ position: relative;
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+  
 }
+
+.conditions:checked + .icon-box {
+  background-color: var(--text-accent-color);
+} 
+
 
 .name-text textarea::placeholder {
 color: rgba(117, 117, 117, 0.5);
@@ -998,6 +1011,7 @@ color: rgba(117, 117, 117, 0.5);
   border: 2px solid var(--text-accent-color);
   border-radius: 4px;
   fill: var(--main-title-color);
+  margin-right: 8px;
 }
 
 
@@ -1017,7 +1031,7 @@ color: rgba(117, 117, 117, 0.5);
   display: block;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+cursor: pointer;
 }
 
 .button-box:hover,

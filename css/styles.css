@@ -811,8 +811,8 @@ img {
 cursor: pointer;
 }
 
-.icon-button:hover,
-.icon-button:focus {
+.modal-button:hover .icon-button,
+.modal-button:focus .icon-button  {
 
 fill: var(--text-accent-color);
 
@@ -838,6 +838,7 @@ fill: var(--text-accent-color);
   align-items: center;
   justify-content: center;
   margin-left: 93px;
+ margin-right: 10px;
 }
 .icon-send {
   width: 24px;
@@ -903,6 +904,7 @@ padding: 40px;
   margin-bottom: 12px;
   font-size: 20px;
   line-height: 1.15;
+  font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -923,6 +925,7 @@ height: 40px;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 cursor: pointer;
+padding-left: 42px;
 }
 
 .icon-sign {
@@ -931,6 +934,7 @@ cursor: pointer;
   height: 18px;
   left: 12px;
   top: 29px;
+  
 }
 .frame:focus {
 border-color: var(--text-accent-color);
@@ -970,6 +974,7 @@ font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
   
 }
 
@@ -1008,15 +1013,11 @@ color: rgba(117, 117, 117, 0.5);
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--text-accent-color);
+  border: 2px solid var(--main-text-color);
   border-radius: 4px;
   fill: var(--main-title-color);
   margin-right: 8px;
 }
-
-
-
-
 
 .button-box {
   padding: 0;
@@ -1031,15 +1032,14 @@ color: rgba(117, 117, 117, 0.5);
   display: block;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-cursor: pointer;
-}
-
-.button-box:hover,
-.button-box:focus {
+  cursor: pointer;
   background-color: var(--text-accent-color);
   color: var(--main-title-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+
 }
+
 
 
   
